@@ -13,6 +13,7 @@ const FavoritesPage: React.FC = () => {
       setFavoriteList(savedFavorites);
     }
   }, []);
+  
 
   const toggleFavorite = (movie: Movie) => {
     const isFavorite = favoriteList.some((fav) => fav.id === movie.id);
