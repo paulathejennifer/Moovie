@@ -7,7 +7,6 @@ import { Movie } from '../hooks/useFetchMovies';
 const FavoritesPage: React.FC = () => {
   const [favoriteList, setFavoriteList] = useState<Movie[]>([]);
 
-  
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const savedFavorites = JSON.parse(localStorage.getItem('favorites') || '[]');
