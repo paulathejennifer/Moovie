@@ -14,6 +14,7 @@ const FavoritesPage: React.FC = () => {
     }
   }, []);
   
+  
 
   const toggleFavorite = (movie: Movie) => {
     const isFavorite = favoriteList.some((fav) => fav.id === movie.id);
